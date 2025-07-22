@@ -1,2 +1,2 @@
-# django-initial
+# Django Initial Project
 Initial project django
