@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Initial Django Project</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f4f6fa;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 600px;
+            margin: 60px auto;
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+            padding: 32px;
+            text-align: center;
+        }
+        h1 {
+            color: #2c3e50;
+            margin-bottom: 16px;
+        }
+        p {
+            color: #555;
+            font-size: 1.1em;
+        }
+        a {
+            color: #2980b9;
+            text-decoration: none;
+            margin-top: 20px;
+            display: inline-block;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        span {
+            text-decoration: underline
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to Initial Django Project!</h1>
+        <p>This is the index page template.</p>
+        <p>Created by <span>{{ name }}</span> from {{ city }}.</p>
+        <a href="/about">About</a> | <a href="api/contact">Contact</a>
+    </div>
+</body>
+</html>
