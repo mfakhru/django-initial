@@ -11,3 +11,11 @@ def about(request):
 
 def contact(request):
     return HttpResponse("<h1>Contact Page</h1> Open my portolio at <a href='https://mfakhru.github.io/'>Portofolio</a>")
+
+def shows(request):
+    message = request.POST.get('inputText', 'default')
+    check_b = request.POST.get('inputCheck', False)
+    pars = {"name": "Fakhru", "city": "Jakarta", "message": ""}
+    if check_b:
+        pars = {"name": "Fakhru", "city": "Jakarta", "message": message}
+    return render(request, 'index.html', pars)
